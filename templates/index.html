@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Timeless Shades: Portraits with a Touch of Color{% endblock %}
+
+{% block content %}
+<section class="intro">
+    <div class="container">
+        <div class="row d-flex align-items-start">
+            <div class="col-md-11">
+                <h1 class="display-3">Timeless Shades: Portraits with a Touch of Color <br>FineArt Studio.</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end:Intro -->
+<section class="space-md">
+    <!-- portfolio -->
+    <div id="portfolio" class="container">
+        <div id="portfolio-filters">
+            <ul id="filters" class="p-0">
+                <li><a href="*" class="active">everything</a></li>
+                <li><a href=".digital">B&W</a></li>
+                <li><a href=".branding">Web Design</a></li>
+                <li><a href=".campaigns">My Style</a></li>
+            </ul>
+        </div>
+        <div class="grid" data-cols="3" data-margin="0" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
+            <!-- entry 1-->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/KAte.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">KaTe</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- end:entry -->
+                  <!-- entry 2-->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/Morgan.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">My Son...My Sun</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                  <!-- entry 3-->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/PrayingGirl.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">PrayingGirlar</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                  <!-- entry 3 -->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/Pray.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">Pray</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                  <!-- entry 4-->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/Slavic-Style.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">Slavic Style</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                  <!-- entry 5 -->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/Faz.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">Faz</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                  <!-- entry 6-->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/Iskustvo.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">Bold details</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                  <!-- entry -->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/NatiDormer.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">NatiDormer</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+                  <!-- entry -->
+            <div class="entry work-entry branding">
+                <a href="{{ url_for('artworks') }}">
+                    <div class="entry-image imageBG" data-img="static/img/shadow.jpg"></div>
+                    <div class="work-entry-hover">
+                        <div class="work-entry-content">
+                            <div class="work-entry-title">shadow</div>
+                            <div class="work-entry-cat"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Repeat other entries here -->
+        </div>
+    </div>
+    <!-- /end:portfolio -->
+</section>
+{% endblock %}

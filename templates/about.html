@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<section class="pt-4">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <figure>
+                    <img src="{{ url_for('static', filename='img/Profile.jpg') }}" alt="Profile Image" class="img-fluid">
+                </figure>
+            </div>
+            <!-- end:col -->
+            <div class="col-md-6 pl-lg-5 pl-md-5">
+                <h2>
+                    Inspired by the timeless elegance of charcoal and attention to detail..
+                </h2>
+                <p class="lead mt-4">
+                    Charcoal drawing is one of the oldest forms of art and is considered a traditional medium used by artists since ancient times, such as in the cave paintings of Lascaux. As a drawing tool, charcoal is distinguished by its ability to create fine gradients and shadows, making it ideal for figurative drawing and highlighting intricate details in artworks..
+                </p>
+                <hr class="mt-5">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <p><strong>Dubai UAE</strong><br>03.10.1994</p>
+                        <p><strong></strong><br></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong></strong><br></p>
+                        <p><br><br></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end:col -->
+        </div>
+        <hr class="mt-5">
+    </div>
+</section>
+{% endblock %}
